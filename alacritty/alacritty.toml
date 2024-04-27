@@ -1,0 +1,19 @@
+# got these settings from https://github.com/mischavandenburg/dotfiles/blob/main/alacritty.toml
+# must be placed in $HOME/.config/alacritty/alacritty.toml
+# themes from https://github.com/alacritty/alacritty-theme
+
+import = ["~/.config/alacritty/themes/gruvbox_dark.toml"]
+
+[font]
+size = 12
+
+[font.normal]
+#family = "UbuntuMono Nerd Font"
+
+[window]
+decorations = "none"
+startup_mode="Maximized"
+
+[window.padding]
+x = 7
+y = 0
