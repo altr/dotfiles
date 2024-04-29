@@ -120,4 +120,3 @@ if ! shopt -oq posix; then
   fi
 fi
 . "$HOME/.cargo/env"
-source /src/alacritty/extra/completions/alacritty.bash
