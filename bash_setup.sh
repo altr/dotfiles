@@ -12,7 +12,7 @@ if ! grep 'eval "$(starship init bash)"' ~/.bashrc &> /dev/null;then
 cat <<EOF>> ~/.bashrc 
 alias ll='ls -alF'
 alias la='ls -lA'
-alias l='ls -CF'
+alias l='ls -lCF'
 alias lt='ls -lt'
 
 alias ls='ls --color=auto'
