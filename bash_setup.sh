@@ -13,7 +13,7 @@ cat <<EOF>> ~/.bashrc
 alias ll='ls -alF'
 alias la='ls -lA'
 alias l='ls -lCF'
-alias lt='ls -lt'
+alias lt='ls -lrt'
 
 alias ls='ls --color=auto'
 
