@@ -7,7 +7,7 @@ if ! command -v starship &> /dev/null;then
 fi
 
 # ensure the right aliases are added to bashrc
-if ! command -v grep 'eval "$(starship init bash)"' ~/.bashrc &> /dev/null;then
+if ! grep 'eval "$(starship init bash)"' ~/.bashrc &> /dev/null;then
 	echo "setup .bashrc"
 cat <<EOF>> ~/.bashrc 
 alias ll='ls -alF'
