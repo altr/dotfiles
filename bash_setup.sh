@@ -24,6 +24,7 @@ alias egrep='egrep --color=auto'
 # GIT
 alias gp='git pull'
 alias gs='git status'
+alias ga='git add'
 # ~~~~~~~~~~~~~~~ Prompt ~~~~~~~~~~~~~~~~~~~~~~~~
 EOF
 
