@@ -25,6 +25,17 @@ alias egrep='egrep --color=auto'
 alias gp='git pull'
 alias gs='git status'
 alias ga='git add'
+
+# encryption & decryption
+enc() {
+    openssl enc -aes-256-cbc -md sha512 -pbkdf2 -iter 1000000 -salt -in "$1" -out "$1.enc"
+}
+dec() {
+    file=`echo "$1"`
+    file_no_extension=`echo ${file%.*}`
+    openssl enc -d -aes-256-cbc -md sha512 -salt -pbkdf2 -iter 1000000 -in "$file" -out "$file_no_extension"
+}
+
 # ~~~~~~~~~~~~~~~ Prompt ~~~~~~~~~~~~~~~~~~~~~~~~
 EOF
 
