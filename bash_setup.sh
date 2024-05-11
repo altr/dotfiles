@@ -26,6 +26,9 @@ alias gp='git pull'
 alias gs='git status'
 alias ga='git add'
 
+# NPM
+alias dev='npm run dev -- --host'
+
 # encryption & decryption
 enc() {
     openssl enc -aes-256-cbc -md sha512 -pbkdf2 -iter 1000000 -salt -in "$1" -out "$1.enc"
