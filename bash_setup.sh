@@ -25,6 +25,7 @@ alias egrep='egrep --color=auto'
 alias gp='git pull'
 alias gs='git status'
 alias ga='git add'
+alias gr='git rm'
 
 # NPM
 alias dev='npm run dev -- --host'
